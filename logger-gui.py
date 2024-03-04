@@ -422,6 +422,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.encoder = Codex560(port, 1)
 
         print("Encoder: Connected")
+        print("Encoder test read: %.f" % float(self.encoder.get_main_counter()))
 
     def connectSerial(self):
 
